@@ -1,0 +1,15 @@
+# Image Sources & License (Pexels)
+
+We use externally hosted images (hotlinked) on the product pages to ensure real, free stock is used.
+
+- Hoodie: Young Man in Black Hoodie — https://images.pexels.com/photos/30363173/pexels-photo-30363173.jpeg
+  - Source page: https://www.pexels.com/photo/young-man-in-black-hoodie-studio-portrait-30363173/
+- Oversized Tee: Casual Fashion Model in Oversized T-Shirt — https://images.pexels.com/photos/28758240/pexels-photo-28758240.jpeg
+  - Source page: https://www.pexels.com/photo/casual-fashion-model-in-oversized-t-shirt-28758240/
+- Minimal Cap: Man Standing in T-shirt and Cap — https://images.pexels.com/photos/26447865/pexels-photo-26447865.jpeg
+  - Source page: https://www.pexels.com/photo/man-standing-in-t-shirt-and-cap-26447865/
+
+## License
+All images are from Pexels and are free for commercial use; attribution is *not required*, though appreciated.
+- License page: https://www.pexels.com/license/
+- Help: Can I use for commercial projects? https://help.pexels.com/hc/en-us/articles/360042295214
