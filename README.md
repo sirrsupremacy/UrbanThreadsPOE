@@ -27,6 +27,11 @@ Home → Products → Checkout → Thank You; About; Contact
 ## Changelog
 - v0.1: Initial scaffold and assets.
 
+## Media Queries
+<img width="1276" height="795" alt="Full Screen" src="https://github.com/user-attachments/assets/e34e253a-8569-45c9-bdb1-ca19cab676a4" />
+<img width="964" height="697" alt="iPad" src="https://github.com/user-attachments/assets/8e6ce25c-80f6-4e1d-abd8-a13af477557d" />
+<img width="494" height="696" alt="iPhone" src="https://github.com/user-attachments/assets/45905833-a28b-4885-a7c3-9198f582a663" />
+
 ## References
 - Pexels License: https://www.pexels.com/license/
 - Image links listed in `Content_Research/images-attribution.md`.
