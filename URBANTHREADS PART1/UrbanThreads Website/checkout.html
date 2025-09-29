@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Urban Threads — Checkout</title><link rel="stylesheet" href="css/style.css"></head>
-<body>
-<header class="site-header"><a class="logo" href="index.html"> <img srcset="images/logo.png" alt="Urban Threads Logo" style='height:40px;'>Urban Threads</a></header>
-<main class="prose">
-<h1>Checkout</h1>
-<form id="checkoutForm">
-  <fieldset>
-    <legend>Item</legend>
-    <label>Product <input id="productName" name="productName" readonly></label>
-    <label>SKU <input id="sku" name="sku" readonly></label>
-    <label>Price (R) <input id="price" name="price" readonly></label>
-  </fieldset>
-  <fieldset>
-    <legend>Contact</legend>
-    <label>Full Name <input required name="fullname" autocomplete="name"></label>
-    <label>Email <input required type="email" name="email" autocomplete="email"></label>
-    <label>Phone <input required type="tel" name="phone" autocomplete="tel"></label>
-  </fieldset>
-  <fieldset>
-    <legend>Delivery</legend>
-    <label>Address <input required name="address" autocomplete="street-address"></label>
-    <label>City <input required name="city" autocomplete="address-level2"></label>
-    <label>Postal Code <input required name="postal" pattern="\d{4}"></label>
-  </fieldset>
-  <fieldset>
-    <legend>Payment</legend>
-    <label>Card Number <input required inputmode="numeric" pattern="\d{{16}}" name="card"></label>
-    <label>Expiry (MM/YY) <input required pattern="\d{{2}}/\d{{2}}" name="exp"></label>
-    <label>CVV <input required inputmode="numeric" pattern="\d{{3}}" name="cvc"></label>
-  </fieldset>
-  <button type="submit" class="btn">Place Order</button>
-</form>
-</main>
-<footer class="site-footer"><small>&copy; <span id="year"></span> Urban Threads</small></footer>
-<script src="js/app.js"></script></body></html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Urban Threads — Checkout</title>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+    <body>
+      <header class="site-header">
+  <a class="logo" href="index.html"><img srcset="images/logo.png" alt="Urban Threads Logo" style='height:40px;'>Urban Threads</a>
+  <nav aria-label="Primary">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+      <header class='site-header'>
+        <a class='logo' href='index.html'>Urban Threads</a>
+      </header>
+        <main>
+          <h1>Checkout</h1>
+          <form id='checkoutForm'>
+            <button type='submit'>Place Order</button>
+          </form>
+        </main>
+        <footer class='site-footer'>
+          <small>&copy; <span id='year'></span> Urban Threads</small>
+        </footer>
+        <script src='js/app.js'>
+        </script>
+      </body>
+        </html>

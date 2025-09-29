@@ -1,32 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Urban Threads — Products</title>
-<link rel="stylesheet" href="css/style.css"></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urban Threads — Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<a class="logo" href="index.html"><img srcset="images/logo.png" alt="Urban Threads Logo" style='height:40px;'>Urban Threads</a>
+<style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card.product {
+  text-align: center;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.product:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #444;
+}
+ </style>
 <body>
-<header class="site-header"><a class="logo" href="index.html"><img srcset="images/logo.png" alt="Urban Threads Logo" style='height:40px;'>Urban Threads</a>
-<nav aria-label="Primary"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html" aria-current="page">Products</a><a href="contact.html">Contact</a></nav></header>
-<main>
-<section class="grid cols-3 products">
-<article class="card product">
-  <img src="https://images.pexels.com/photos/30363173/pexels-photo-30363173.jpeg" alt="Studio portrait wearing a black hoodie" loading="lazy">
-  <h2>Classic Black Hoodie</h2>
-  <p class="price">R599.00</p>
-  <a class="btn" href="checkout.html?sku=UT-HOODIE&name=Classic%20Black%20Hoodie&price=599">Buy Now</a>
-</article>
-<article class="card product">
-  <img src="https://images.pexels.com/photos/28758240/pexels-photo-28758240.jpeg" alt="Oversized t-shirt streetwear" loading="lazy">
-  <h2>Oversized Tee</h2>
-  <p class="price">R249.00</p>
-  <a class="btn" href="checkout.html?sku=UT-TEE&name=Oversized%20Tee&price=249">Buy Now</a>
-</article>
-<article class="card product">
-  <img src="https://images.pexels.com/photos/26447865/pexels-photo-26447865.jpeg" alt="Minimal black cap" loading="lazy">
-  <h2>Minimal Cap</h2>
-  <p class="price">R199.00</p>
-  <a class="btn" href="checkout.html?sku=UT-CAP&name=Minimal%20Cap&price=199">Buy Now</a>
-</article>
-</section>
-</main>
-<footer class="site-footer"><small>&copy; <span id="year"></span> Urban Threads</small></footer>
-<script src="js/app.js"></script></body></html>
+  <header class="site-header">
+    <a class="logo" href="index.html">Urban Threads</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html" aria-current="page">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-grid">
+      <article class="card product">
+        <img src="https://images.pexels.com/photos/30363173/pexels-photo-30363173.jpeg" alt="Classic Black Hoodie" loading="lazy">
+        <h2>Classic Black Hoodie</h2>
+        <p class="price">R599.00</p>
+        <a class="btn" href="checkout.html?sku=UT-HOODIE&name=Classic%20Black%20Hoodie&price=599">Buy Now</a>
+      </article>
+
+      <article class="card product">
+        <img src="https://images.pexels.com/photos/28758240/pexels-photo-28758240.jpeg" alt="Oversized Tee" loading="lazy">
+        <h2>Oversized Tee</h2>
+        <p class="price">R249.00</p>
+        <a class="btn" href="checkout.html?sku=UT-TEE&name=Oversized%20Tee&price=249">Buy Now</a>
+      </article>
+
+      <article class="card product">
+        <img src="https://images.pexels.com/photos/26447865/pexels-photo-26447865.jpeg" alt="Minimal Cap" loading="lazy">
+        <h2>Minimal Cap</h2>
+        <p class="price">R199.00</p>
+        <a class="btn" href="checkout.html?sku=UT-CAP&name=Minimal%20Cap&price=199">Buy Now</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Urban Threads</small>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
